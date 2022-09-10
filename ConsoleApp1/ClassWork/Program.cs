@@ -9,37 +9,62 @@ namespace ClassWork
     {
         static void Main(string[] args)
         {
-            /*Console.Write("Введите иимя)) ");
+            Console.WriteLine("1 ZADACA. Введение имени пользователя на консоль");
+            Console.Write("Введите своё имя) ");
             string name = Console.ReadLine();
-            Console.WriteLine($"Privet, {name}");
+            Console.WriteLine($"САЛАМ АЛЕЙКУМ, {name}");
             // 2 ZADACA
-            Console.Write("Введите число 1");
-            int num1 = int.Parse(Console.ReadLine());
-            Console.Write("Введите число 2");
-            int num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("2 ZADACA. Деление первого числа на авторое");
+            Console.Write("Введите первое число ");
+            double num1 = int.Parse(Console.ReadLine());
+            Console.Write("Введите второе число ");
+            double num2 = int.Parse(Console.ReadLine());
             if (num2 != 0)
-                Console.Write(num1 / num2);
+                Console.WriteLine(num1 / num2);
             else
                 Console.WriteLine("NA ZERO DELIT NELIZYA");
-            // 3 ZADACA
-            Console.Write("Введите символ ");
-            var bukva = Console.ReadLine();
-            Console.WriteLine("Следующая буква " + bukva++);
-            // 4 zadaca*/
+            // 3 ZADACA 
+            //Console.Write("Введите символ ");
+            //var bukva = Console.ReadLine();
+            //Console.WriteLine("Следующая буква " + bukva++);
+            // 4 zadaca
+            Console.WriteLine("4 ZADACA. Вычесление корней квадратного уравнения");
+
             Console.Write("Введите коэфицент a ");
-            double a = double.Parse(Console.ReadLine());    
+            double a = double.Parse(Console.ReadLine()); 
+            
             Console.Write("Введите коэфицент b ");
             double b = double.Parse(Console.ReadLine());
+
             Console.Write("Введите коэфицент c ");
             double c = double.Parse(Console.ReadLine());
-            double des = (b * b) - 4 * a * c;
-            if (a != 0)
+            static void Kvyruv(double a, double b, double c)
             {
-                Console.WriteLine($"x1 = {(-b + Math.Sqrt(des)) / 2}");
-                Console.Write($"x2 = {(-b - Math.Sqrt(des)) / 2}");
+                double des = (b * b) - 4 * a * c;
+                if (a != 0)
+                {
+                    if (des > 0)
+                    {
+                        Console.WriteLine($"x1 = {(-b + Math.Sqrt(des)) / 2 * a}");
+                        Console.WriteLine($"x2 = {(-b - Math.Sqrt(des)) / 2 * a}");
+                    }
+                    else if (des == 0)
+                    {
+                        Console.WriteLine($"x = {-b / 2}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Дискриминант отрицательный.");
+                        Console.WriteLine("Комплексные корни не умею считать :(");
+                        Console.WriteLine("Сам Прогай Такое((");
+                    }
+                }
+                else
+                    Console.WriteLine($"x = {-c / b}");// iii hyli?;
             }
-            else
-                Console.WriteLine($"x = {-c / b}");
+            Kvyruv(a, b, c);  
+
+
 
 
         }

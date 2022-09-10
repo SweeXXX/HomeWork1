@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Никита\\Desktop\\fakk\\ConsoleApp1\\ClassWork\\ClassWork.csproj": {}
+    "C:\\Users\\Никита\\Source\\Repos\\SweeXXX\\HomeWork1\\ConsoleApp1\\ClassWork\\ClassWork.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Никита\\Desktop\\fakk\\ConsoleApp1\\ClassWork\\ClassWork.csproj": {
+    "C:\\Users\\Никита\\Source\\Repos\\SweeXXX\\HomeWork1\\ConsoleApp1\\ClassWork\\ClassWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Никита\\Desktop\\fakk\\ConsoleApp1\\ClassWork\\ClassWork.csproj",
+        "projectUniqueName": "C:\\Users\\Никита\\Source\\Repos\\SweeXXX\\HomeWork1\\ConsoleApp1\\ClassWork\\ClassWork.csproj",
         "projectName": "ClassWork",
-        "projectPath": "C:\\Users\\Никита\\Desktop\\fakk\\ConsoleApp1\\ClassWork\\ClassWork.csproj",
+        "projectPath": "C:\\Users\\Никита\\Source\\Repos\\SweeXXX\\HomeWork1\\ConsoleApp1\\ClassWork\\ClassWork.csproj",
         "packagesPath": "C:\\Users\\Никита\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Никита\\Desktop\\fakk\\ConsoleApp1\\ClassWork\\obj\\",
+        "outputPath": "C:\\Users\\Никита\\Source\\Repos\\SweeXXX\\HomeWork1\\ConsoleApp1\\ClassWork\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Никита\\AppData\\Roaming\\NuGet\\NuGet.Config",
