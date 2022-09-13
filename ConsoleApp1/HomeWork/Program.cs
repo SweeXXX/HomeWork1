@@ -3,13 +3,12 @@ using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Home
+namespace HomeWork
 {
     class Proga
     {
         static void Main(string[] args)
         {
-            /*
             Console.WriteLine("1 ZADANIE. chislo E");
             Console.WriteLine(Math.Round(Math.E,1));
             Console.WriteLine();
@@ -39,8 +38,9 @@ namespace Home
 
             Console.WriteLine("6 ZADANIE. Введите радиус окружности");
             double rad = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Длина окружности = {Math.Round(2*Math.PI*rad,4)}. Площадь круга = {Math.Round(Math.PI*rad*rad,4)}");
-            Console.WriteLine();*/
+            Console.WriteLine($"Длина окружности = {Math.Round(2*Math.PI*rad,4)}. " +
+                $"Площадь круга = {Math.Round(Math.PI*rad*rad,4)}");
+            Console.WriteLine();
 
             Console.Write("7 ZADANIE. Вычисляем cos(x). Введите x ");
             double x = double.Parse(Console.ReadLine());
@@ -60,7 +60,9 @@ namespace Home
             Console.Write("9 ZADANIE."+
                 "Введите количество кг конфет, печенья, яблок по порядку.Через пробел ");
             double[] cousts = { 2, 2, 2 };// в задание сказано было, что цены даны. поэтому я сделал так))
-            var xyz = Console.ReadLine().Split();// cousts это цены за кг. первое число это , второе печенье, а 3 яблоки
+            var xyz = Console.ReadLine().Split();// cousts это цены за кг. 1 число-
+                                                 // это цена конфет,
+                                                 // 1 - печенья, а 3 яблок.
             double[] doublexyz = new double[3];
             double sum = 0;
             for (int i = 0; i < xyz.Length; i++)

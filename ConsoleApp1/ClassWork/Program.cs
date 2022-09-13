@@ -49,7 +49,7 @@ namespace ClassWork
             Console.Write("Введите коэфицент c ");
             double c = double.Parse(Console.ReadLine());
 
-            static void Kvyruv(double a, double b, double c)
+            static void KvUrav(double a, double b, double c)
             {
                 double des = (b * b) - 4 * a * c;
                 if (a != 0)
@@ -73,7 +73,7 @@ namespace ClassWork
                 else
                     Console.WriteLine($"x = {-c / b}");// iii hyli?;
             }
-            Kvyruv(a, b, c)
+            KvUrav(a, b, c);
         }     
     }
 }
