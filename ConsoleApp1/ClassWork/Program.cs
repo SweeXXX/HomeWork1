@@ -9,10 +9,13 @@ namespace ClassWork
     {
         static void Main(string[] args)
         {
+            //1 ZADACA
             Console.WriteLine("1 ZADACA. Введение имени пользователя на консоль");
             Console.Write("Введите своё имя) ");
             string name = Console.ReadLine();
             Console.WriteLine($"САЛАМ АЛЕЙКУМ, {name}");
+
+
             // 2 ZADACA
             Console.WriteLine("2 ZADACA. Деление первого числа на авторое");
             Console.Write("Введите первое число ");
@@ -23,10 +26,17 @@ namespace ClassWork
                 Console.WriteLine(num1 / num2);
             else
                 Console.WriteLine("NA ZERO DELIT NELIZYA");
+
+
             // 3 ZADACA 
-            //Console.Write("Введите символ ");
-            //var bukva = Console.ReadLine();
-            //Console.WriteLine("Следующая буква " + bukva++);
+            Console.WriteLine("3 ZADACA. Изучаем алфавит");
+            Console.Write("Введите символ ");
+            string stroka = Console.ReadLine();
+            char bukva = stroka[stroka.Length-1];
+            int ascii = (int)bukva;
+            char answer = (char)(ascii+1);
+            Console.WriteLine(answer);
+            
             // 4 zadaca
             Console.WriteLine("4 ZADACA. Вычесление корней квадратного уравнения");
 
@@ -35,9 +45,10 @@ namespace ClassWork
             
             Console.Write("Введите коэфицент b ");
             double b = double.Parse(Console.ReadLine());
-
+            
             Console.Write("Введите коэфицент c ");
             double c = double.Parse(Console.ReadLine());
+
             static void Kvyruv(double a, double b, double c)
             {
                 double des = (b * b) - 4 * a * c;
@@ -62,13 +73,7 @@ namespace ClassWork
                 else
                     Console.WriteLine($"x = {-c / b}");// iii hyli?;
             }
-            Kvyruv(a, b, c);  
-
-
-
-
-        }
-        
-            
+            Kvyruv(a, b, c)
+        }     
     }
 }
