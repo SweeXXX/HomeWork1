@@ -251,7 +251,8 @@ namespace HomeWork
                 string[] koor2 = Console.ReadLine().Split();
                 double x2 = double.Parse(koor2[0]);
                 double y2 = double.Parse(koor2[1]);
-                Console.WriteLine($"Расстояние между двумя точками = {Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2))}");
+                Console.WriteLine($"Расстояние между двумя точками = {Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2))}\n");
+                Console.ReadKey();
             }
             static void zad19()
             {
@@ -260,12 +261,12 @@ namespace HomeWork
                 int b = 2;
                 int с = 3;
                 int t = a;
-                Console.WriteLine($"a = {a}\nb = {b}\nc = {с}");
+                Console.WriteLine($"a = {a} b = {b} c = {с}");
                 t = b;
                 b = с;
                 с = a;
                 a = t;
-                Console.WriteLine($"А: a = {a}\nb = {b}\nc = {с}");
+                Console.WriteLine($"А: a = {a} b = {b} c = {с}");
                 a = 1;
                 b = 2;
                 с = 3;
@@ -274,7 +275,7 @@ namespace HomeWork
                 b = a;
                 a = с;
                 с = t;
-                Console.WriteLine($"Б: a = {a}\nb = {b}\nc = {с}");
+                Console.WriteLine($"Б: a = {a} b = {b} c = {с}");
             }
             static void zad20()
             {
@@ -330,7 +331,7 @@ namespace HomeWork
             }
             static void zad25()
             {
-                Console.WriteLine("25 ZADANIE.");
+                Console.WriteLine("25 ZADANIE.Из трехзначного числа x вычли его последнюю цифру.");
                 Console.Write("Введите число ");
                 string input = Console.ReadLine();
                 if ((int.Parse(input) % 100) / 10 != 0)
@@ -410,15 +411,13 @@ namespace HomeWork
                 double k = second-first;//k - разница между первым и вторым
                 Console.WriteLine($"{len}-ый номер прогрессии = {first+(k*(len-1))}");
             }
-            static void zad33()
+            /*static void zad33()
             {
                 Console.Write("Кто ты, воин? Ты студент? ");
                 string input = Console.ReadLine();
                 Console.Write("Ты трудоустроен? ");
                 string work = Console.ReadLine();
-
-                
-            }
+            }*/
             
             static void zad34()
             {
